@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>FirstServlet</servlet-name>
+        <servlet-class>servlet.FirstServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ThreeParams</servlet-name>
+        <servlet-class>servlet.ThreeParams</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Verify</servlet-name>
+        <servlet-class>servlet.Verify</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ShowMessage</servlet-name>
+        <servlet-class>servlet.ShowMessage</servlet-class>
+    </servlet>    
+    <servlet>
+        <servlet-name>AddMessageServlet</servlet-name>
+        <servlet-class>servlet.AddMessageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>reg</servlet-name>
+        <servlet-class>regServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>showData</servlet-name>
+        <servlet-class>servlet.showData</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showData</servlet-name>
+        <url-pattern>/showData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>reg</servlet-name>
+        <url-pattern>/reg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FirstServlet</servlet-name>
+        <url-pattern>/FirstServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ThreeParams</servlet-name>
+        <url-pattern>/ThreeParams</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Verify</servlet-name>
+        <url-pattern>/Verify</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShowMessage</servlet-name>
+        <url-pattern>/ShowMessage</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddMessageServlet</servlet-name>
+        <url-pattern>/AddMessageServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+
+</web-app>
